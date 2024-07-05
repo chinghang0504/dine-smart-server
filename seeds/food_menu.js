@@ -13,58 +13,72 @@ export async function seed(knex) {
   await knex('food_types').insert([
     {
       type: 'Appetizer & Salad',
+      image: 'Chicken_Katsu.jpg',
       priority: 0
     },
     {
       type: 'Tempura',
+      image: 'Assorted_Tempura.jpg',
       priority: 1
     },
     {
       type: 'Noodles',
+      image: 'Spicy_Yaki_Udon.jpg',
       priority: 2
     },
     {
       type: 'Cooked Don',
+      image: 'chickenDon.jpg',
       priority: 3
     },
     {
       type: 'Sashimi Don',
+      image: 'Chirashi_Don.jpg',
       priority: 4
     },
     {
       type: 'Nigiri Sushi',
+      image: 'nigiri.jpg',
       priority: 5
     },
     {
       type: 'Maki & Roll',
+      image: 'Smoked_Salmon_Cream_Cheese_Roll.jpg',
       priority: 6
     },
     {
       type: 'Temaki',
+      image: 'Spicy_Salmon_Cone.jpg',
       priority: 7
     },
     {
       type: 'A La Carte',
+      image: 'Beef_Teriyaki.jpg',
       priority: 8
     },
     {
       type: 'Sashimi',
+      image: 'Deluxe_Assoretd_Sashimi.jpg',
       priority: 9
     },
     {
       type: 'Combination',
+      image: 'Tuna_N_Salmon_Combo.jpg',
       priority: 10
     },
     {
       type: 'Bluefin Special',
+      image: 'download.jpg',
       priority: 11
     },
     {
       type: 'Party Setto',
+      image: 'FoQCRN6ViCg1EYr8XYcc.jpg',
       priority: 12
     },
     {
       type: 'Drinks',
+      image: 'qLkkJlzCilx89JtyAAJJ.jpg',
       priority: 13
     }
   ]);
@@ -75,6 +89,7 @@ export async function seed(knex) {
       name: "Miso",
       description: "Green onion, tofu.",
       price: 2.0,
+      image: "Miso.jpg",
       priority: 0,
       type: 'Appetizer & Salad'
     },
@@ -82,6 +97,7 @@ export async function seed(knex) {
       name: "Chicken Karaage",
       description: "Special seasoned boneless fried chicken.",
       price: 10.25,
+      image: "Chicken_Karaage.jpg",
       priority: 1,
       type: 'Appetizer & Salad'
     },
@@ -89,6 +105,7 @@ export async function seed(knex) {
       name: "Ika Karaage",
       description: "Special seasoned deep-fried squid.",
       price: 12.5,
+      image: "Ika_Karaage.jpg",
       priority: 2,
       type: 'Appetizer & Salad'
     },
@@ -96,6 +113,7 @@ export async function seed(knex) {
       name: "Croquette",
       description: "Deep-fried kabocha with a boiled egg thousand island sauce on top.",
       price: 8.5,
+      image: "Croquette.jpg",
       priority: 3,
       type: 'Appetizer & Salad'
     },
@@ -103,6 +121,7 @@ export async function seed(knex) {
       name: "Takoyaki",
       description: "Deep-fried octopus ball on top g- onion, fish flakes, mayo with teriyaki sauce.",
       price: 6.0,
+      image: "Takoyaki.jpg",
       priority: 4,
       type: 'Appetizer & Salad'
     },
@@ -110,6 +129,7 @@ export async function seed(knex) {
       name: "Gyoza",
       description: "Pan-fried pork dumplings six pieces.",
       price: 7.5,
+      image: "",
       priority: 5,
       type: 'Appetizer & Salad'
     },
@@ -117,6 +137,7 @@ export async function seed(knex) {
       name: "Spicy Gyoza",
       description: "Pan-fried pork dumplings six pieces with house spicy sauce.",
       price: 8.25,
+      image: "Spicy_Gyoza.jpg",
       priority: 6,
       type: 'Appetizer & Salad'
     },
@@ -124,6 +145,7 @@ export async function seed(knex) {
       name: "Crispy Gyoza",
       description: "Deep-fried pork dumplings six pieces.",
       price: 7.75,
+      image: "Crispy_Gyoza.jpg",
       priority: 7,
       type: 'Appetizer & Salad'
     },
@@ -131,6 +153,7 @@ export async function seed(knex) {
       name: "Agedashi Tofu",
       description: "Deep-fried tofu, green onion, fish flakes.",
       price: 7.35,
+      image: "Agedashi_Tofu.jpg",
       priority: 8,
       type: 'Appetizer & Salad'
     },
@@ -138,6 +161,7 @@ export async function seed(knex) {
       name: "Chicken Nanban",
       description: "Deep fried Chicken w/house soy sauce, Tartar sauce",
       price: 10.25,
+      image: "Chicken_Nanban.jpg",
       priority: 9,
       type: 'Appetizer & Salad'
     },
@@ -145,6 +169,7 @@ export async function seed(knex) {
       name: "Gomae",
       description: "Spinach salad with peanut and sesame paste.",
       price: 6.25,
+      image: "Gomae.jpg",
       priority: 10,
       type: 'Appetizer & Salad'
     },
@@ -152,6 +177,7 @@ export async function seed(knex) {
       name: "Edamame",
       description: "Boiled green soybean.",
       price: 6.0,
+      image: "Edamame.jpg",
       priority: 11,
       type: 'Appetizer & Salad'
     },
@@ -159,6 +185,7 @@ export async function seed(knex) {
       name: "Wakame Salad",
       description: "Seaweed salad.",
       price: 5.75,
+      image: "Wakame_Salad.jpg",
       priority: 12,
       type: 'Appetizer & Salad'
     },
@@ -166,6 +193,7 @@ export async function seed(knex) {
       name: "Vegetable Sunomono",
       description: "Japanese vinegared salad with vegetables, rice noodle.",
       price: 4.85,
+      image: "Vege_Sunomono.jpg",
       priority: 13,
       type: 'Appetizer & Salad'
     },
@@ -173,6 +201,7 @@ export async function seed(knex) {
       name: "Ebi Sunomono",
       description: "Japanese vinegared salad with shrimp, rice noodle.",
       price: 5.85,
+      image: "Ebi_Sunomono.jpg",
       priority: 14,
       type: 'Appetizer & Salad'
     },
@@ -180,6 +209,7 @@ export async function seed(knex) {
       name: "Tako Sunomono",
       description: "Japanese vinegared salad with octopus, rice noodle.",
       price: 5.85,
+      image: "Tako_Sunomono.jpg",
       priority: 15,
       type: 'Appetizer & Salad'
     },
@@ -187,6 +217,7 @@ export async function seed(knex) {
       name: "Seafood Sunomono",
       description: "Japanese vinegared salad with hokkigai, ebi, tako, rice noodle.",
       price: 6.25,
+      image: "Seafood_Sunomono",
       priority: 16,
       type: 'Appetizer & Salad'
     },
@@ -194,6 +225,7 @@ export async function seed(knex) {
       name: "House Green Salad",
       description: "Fresh mixed vegetables with house dressing.",
       price: 6.75,
+      image: "House_Green_Salad.jpg",
       priority: 17,
       type: 'Appetizer & Salad'
     },
@@ -201,6 +233,7 @@ export async function seed(knex) {
       name: "Smoked Salmon Tomato Salad",
       description: "Smoked salmon, slice tomato, onion, organic spring mix, crispy garlic, potato flakes, sweet soy dressing.",
       price: 14.95,
+      image: "Smoked_Salmon_Tomato_Salad.jpg",
       priority: 18,
       type: 'Appetizer & Salad'
     },
@@ -208,6 +241,7 @@ export async function seed(knex) {
       name: "Seafood Salad",
       description: "Tako, smoked salmon, ebi, crab meat, fish roe, rice noodle, wasabi mayo, house dressing.",
       price: 11.95,
+      image: "Seafood_Salad.jpg",
       priority: 19,
       type: 'Appetizer & Salad'
     },
@@ -215,6 +249,7 @@ export async function seed(knex) {
       name: "Udon Salad",
       description: "Cold udon noodle, spring mix, egg, prawn, mussel, hokkigai, scallop.",
       price: 13.95,
+      image: "Udon_Salad.jpg",
       priority: 20,
       type: 'Appetizer & Salad'
     },
@@ -222,6 +257,7 @@ export async function seed(knex) {
       name: "Steamed Rice",
       description: "",
       price: 2.5,
+      image: "Rice_uvwkmb",
       priority: 21,
       type: 'Appetizer & Salad'
     },
@@ -229,6 +265,7 @@ export async function seed(knex) {
       name: "Sweet and Sour Chicken",
       description: "",
       price: 17.95,
+      image: "",
       priority: 22,
       type: 'Appetizer & Salad'
     },
@@ -236,6 +273,7 @@ export async function seed(knex) {
       name: "Spicy Agedashi Tofu",
       description: "Deep-fried tofu, green onion, fish flakes and Spicy Sauce.",
       price: 7.5,
+      image: "Spicy_Agadashi_Tofu.jpg",
       priority: 23,
       type: 'Appetizer & Salad'
     }
@@ -247,7 +285,7 @@ export async function seed(knex) {
       name: "Prawn Tempura (7pcs)",
       description: "",
       price: 13.95,
-      image: "",
+      image: "Prawn_Tempura.jpg",
       priority: 0,
       type: 'Tempura'
     },
@@ -255,7 +293,7 @@ export async function seed(knex) {
       name: "Prawn & Yam Tempura (8pcs)",
       description: "",
       price: 13.95,
-      image: "",
+      image: "Prawn_N_Yam_Tempura.jpg",
       priority: 1,
       type: 'Tempura'
     },
@@ -263,7 +301,7 @@ export async function seed(knex) {
       name: "Assorted Tempura - Full",
       description: "8pcs. Prawn, broccoli, asparagus, yam, zucchini.",
       price: 13.95,
-      image: "",
+      image: "Assorted_Tempura.jpg",
       priority: 2,
       type: 'Tempura'
     },
@@ -279,7 +317,7 @@ export async function seed(knex) {
       name: "Yam Tempura - Full",
       description: "8pcs.",
       price: 12.75,
-      image: "",
+      image: "Yam_Tempura_tb1omd.jpg",
       priority: 4,
       type: 'Tempura'
     }
@@ -291,7 +329,7 @@ export async function seed(knex) {
       name: "Nabeyaki Udon",
       description: "Chicken, pork, egg, prawn tempura, vegetable with stone bowl.",
       price: 15.95,
-      image: "",
+      image: "Nabeyaki_Udon.jpg",
       priority: 0,
       type: 'Noodles'
     },
@@ -299,7 +337,7 @@ export async function seed(knex) {
       name: "Tempura Udon",
       description: "Plain udon with four pieces tempura.",
       price: 12.95,
-      image: "",
+      image: "Tempura_Udon.jpg",
       priority: 1,
       type: 'Noodles'
     },
@@ -307,7 +345,7 @@ export async function seed(knex) {
       name: "Kitsune Udon",
       description: "Plain.",
       price: 10.95,
-      image: "",
+      image: "Kitsune_Udon.jpg",
       priority: 2,
       type: 'Noodles'
     },
@@ -315,7 +353,7 @@ export async function seed(knex) {
       name: "Cheese Kimchi Udon",
       description: "Hot stone bowl with kimchi, pork, mozzarella cheese, pollack roe.",
       price: 15.5,
-      image: "",
+      image: "Cheese_Kimchi_Udon.jpg",
       priority: 3,
       type: 'Noodles'
     },
@@ -331,7 +369,7 @@ export async function seed(knex) {
       name: "Mentaiko Tiger Prawn Linguine",
       description: "Cod roe, tiger prawn, scallop, cream sauce.",
       price: 18.25,
-      image: "",
+      image: "Mentaiko_Tiger_Prawn_Linguine.jpg",
       priority: 5,
       type: 'Noodles'
     },
@@ -339,7 +377,7 @@ export async function seed(knex) {
       name: "Chicken Udon",
       description: "",
       price: 13.95,
-      image: "",
+      image: "Chicken_Udon.jpg",
       priority: 6,
       type: 'Noodles'
     },
@@ -347,7 +385,7 @@ export async function seed(knex) {
       name: "Beef Udon",
       description: "",
       price: 13.95,
-      image: "",
+      image: "Beef_Udon.jpg",
       priority: 7,
       type: 'Noodles'
     },
@@ -355,7 +393,7 @@ export async function seed(knex) {
       name: "Veggie Udon",
       description: "",
       price: 10.95,
-      image: "",
+      image: "Vege_Udon.jpg",
       priority: 8,
       type: 'Noodles'
     },
@@ -363,7 +401,7 @@ export async function seed(knex) {
       name: "Beef Yakiudon",
       description: "Pan-fried noodles with mushroom, green onion, seaweed.",
       price: 14.5,
-      image: "",
+      image: "Yaki_Udon.jpg",
       priority: 9,
       type: 'Noodles'
     },
@@ -379,7 +417,7 @@ export async function seed(knex) {
       name: "Spicy Yakiudon",
       description: "Beef, vegetable with special spicy sauce.",
       price: 15.5,
-      image: "",
+      image: "Spicy_Yaki_Udon.jpg",
       priority: 11,
       type: 'Noodles'
     }
@@ -399,7 +437,7 @@ export async function seed(knex) {
       name: "Beef Teriyaki Don",
       description: "",
       price: 15.95,
-      image: "",
+      image: "Beef_Teriyaki_Don.jpg",
       priority: 0,
       type: 'Cooked Don'
     },
@@ -415,7 +453,7 @@ export async function seed(knex) {
       name: "Chicken Teriyaki Don",
       description: "",
       price: 15.95,
-      image: "",
+      image: "Chicken_Teriyaki_Don.jpg",
       priority: 0,
       type: 'Cooked Don'
     },
@@ -431,7 +469,7 @@ export async function seed(knex) {
       name: "Karaage Don",
       description: "Special seasoned boneless fried chicken on rice.",
       price: 15.95,
-      image: "",
+      image: "Karaage_Don.jpg",
       priority: 0,
       type: 'Cooked Don'
     },
@@ -439,7 +477,7 @@ export async function seed(knex) {
       name: "Chicken Soboro",
       description: "Hot stone bowl with grilled chicken, vege, tempura bits, omelets, sp mayo, teri sauce on rice.",
       price: 15.95,
-      image: "",
+      image: "Chicken_Soboro.jpg",
       priority: 0,
       type: 'Cooked Don'
     },
@@ -447,7 +485,7 @@ export async function seed(knex) {
       name: "Kimchi Yaki Rice",
       description: "Hot stone bowl w/ fried kimchi, ham, pork, egg on rice",
       price: 15.95,
-      image: "",
+      image: "Kimchi_Yaki_Rice_hdnryv.jpg",
       priority: 0,
       type: 'Cooked Don'
     },
@@ -467,7 +505,7 @@ export async function seed(knex) {
       name: "Chirashi Don",
       description: "Assorted sashimi on rice.",
       price: 28.5,
-      image: "",
+      image: "Chirashi_Don.jpg",
       priority: 0,
       type: 'Sashimi Don'
     },
@@ -475,7 +513,7 @@ export async function seed(knex) {
       name: "Deluxe Chirashi Don",
       description: "Deluxe sashimi and fish roe on rice.",
       price: 43.5,
-      image: "",
+      image: "Deluxe_Chirashi_Don.jpg",
       priority: 0,
       type: 'Sashimi Don'
     },
@@ -483,7 +521,7 @@ export async function seed(knex) {
       name: "Korean Chirashi Don",
       description: "Assorted sashimi on rice with vegetables.",
       price: 29.0,
-      image: "",
+      image: "Korean_Chirashi_Don",
       priority: 0,
       type: 'Sashimi Don'
     },
@@ -491,7 +529,7 @@ export async function seed(knex) {
       name: "Salmon Don",
       description: "",
       price: 21.95,
-      image: "",
+      image: "Salmon_Sashimi_Don.jpg",
       priority: 0,
       type: 'Sashimi Don'
     },
@@ -507,7 +545,7 @@ export async function seed(knex) {
       name: "Unagi Don",
       description: "Grilled eel on rice.",
       price: 21.5,
-      image: "",
+      image: "Unagi_Don_cucry5.jpg",
       priority: 0,
       type: 'Sashimi Don'
     },
@@ -523,7 +561,7 @@ export async function seed(knex) {
       name: "Spicy Tuna Sashimi Don",
       description: "",
       price: 23.25,
-      image: "",
+      image: "Spicy_Tuna_Sashimi_Don.jpg",
       priority: 0,
       type: 'Sashimi Don'
     },
@@ -531,7 +569,7 @@ export async function seed(knex) {
       name: "Tuna & Salmon Don",
       description: "",
       price: 21.95,
-      image: "",
+      image: "Tuna_N_Salmon_Don.jpg",
       priority: 0,
       type: 'Sashimi Don'
     },
@@ -539,7 +577,7 @@ export async function seed(knex) {
       name: "Tuna Don",
       description: "",
       price: 21.95,
-      image: "",
+      image: "Tuna_Sashimi_Don.jpg",
       priority: 0,
       type: 'Sashimi Don'
     }
@@ -551,7 +589,7 @@ export async function seed(knex) {
       name: "Salmon Nigiri",
       description: "Atlantic.",
       price: 2.5,
-      image: "",
+      image: "Salmon.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -559,7 +597,7 @@ export async function seed(knex) {
       name: "Chopped Scallop Nigiri",
       description: "",
       price: 3.0,
-      image: "",
+      image: "Chopped_Scallop.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -567,7 +605,7 @@ export async function seed(knex) {
       name: "Unagi Nigiri",
       description: "Eel.",
       price: 3.75,
-      image: "",
+      image: "Unagi.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -575,7 +613,7 @@ export async function seed(knex) {
       name: "Tamago Nigiri",
       description: "Egg.",
       price: 2.1,
-      image: "",
+      image: "Tamago.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -583,7 +621,7 @@ export async function seed(knex) {
       name: "Ikura Nigiri",
       description: "Salmon roe.",
       price: 3.5,
-      image: "",
+      image: "Ikura.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -591,7 +629,7 @@ export async function seed(knex) {
       name: "Ebi Nigiri",
       description: "Cooked shrimp.",
       price: 2.5,
-      image: "",
+      image: "Ebi.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -599,7 +637,7 @@ export async function seed(knex) {
       name: "Ika Nigiri",
       description: "Squid.",
       price: 3.0,
-      image: "",
+      image: "Ika.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -607,7 +645,7 @@ export async function seed(knex) {
       name: "Tobiko Nigiri",
       description: "Flying fish eggs.",
       price: 2.5,
-      image: "",
+      image: "Tobiko.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -615,7 +653,7 @@ export async function seed(knex) {
       name: "Hamachi Nigiri",
       description: "Yellowtail.",
       price: 4.0,
-      image: "",
+      image: "Hamachi.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -623,7 +661,7 @@ export async function seed(knex) {
       name: "Inari Nigiri",
       description: "Bean curd.",
       price: 2.1,
-      image: "",
+      image: "Inari.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -631,7 +669,7 @@ export async function seed(knex) {
       name: "Hotategai Nigiri",
       description: "Scallop.",
       price: 3.5,
-      image: "",
+      image: "Hotategai.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -639,7 +677,7 @@ export async function seed(knex) {
       name: "Amaebi Nigiri",
       description: "Sweet shrimp.",
       price: 2.8,
-      image: "",
+      image: "Amaebi.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -647,7 +685,7 @@ export async function seed(knex) {
       name: "Hokkigai Nigiri",
       description: "Arctic surf clam.",
       price: 2.1,
-      image: "",
+      image: "Hokkigai_boirig.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -655,7 +693,7 @@ export async function seed(knex) {
       name: "Masago Nigiri",
       description: "Smelt egg.",
       price: 2.5,
-      image: "",
+      image: "Masago.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -663,7 +701,7 @@ export async function seed(knex) {
       name: "Wakame Nigiri",
       description: "Seaweed salad.",
       price: 2.1,
-      image: "",
+      image: "Wakame.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -671,7 +709,7 @@ export async function seed(knex) {
       name: "Smoked Salmon Nigiri",
       description: "",
       price: 3.0,
-      image: "",
+      image: "Smoked_Salmon.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -679,7 +717,7 @@ export async function seed(knex) {
       name: "Tako Nigiri",
       description: "Octopus.",
       price: 3.25,
-      image: "",
+      image: "Tako.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -695,7 +733,7 @@ export async function seed(knex) {
       name: "Tuna Nigiri",
       description: "Albacore.",
       price: 2.5,
-      image: "",
+      image: "Tuna.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
@@ -703,14 +741,14 @@ export async function seed(knex) {
       name: "Toro Nigiri",
       description: "Tuna belly",
       price: 0.0,
-      image: "",
+      image: "Toro.jpg",
       priority: 0,
       type: 'Nigiri Sushi'
     },
     {
       name: "Uni Nigiri",
       description: "Uni Nigiri",
-      price: 0.0,
+      price: 4.95,
       image: "",
       priority: 0,
       type: 'Nigiri Sushi'
@@ -739,7 +777,7 @@ export async function seed(knex) {
       name: "Alaska Roll",
       description: "Avocado, cucumber, fish roe, mayo topped with salmon and house dressing.",
       price: 7.75,
-      image: "",
+      image: "Alaska_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -747,7 +785,7 @@ export async function seed(knex) {
       name: "Salmon Mountain Roll",
       description: "Avocado, cucumber, fish roe, prawn tempura, topped with mashed salmon, temp flakes, special mayo, wasabi mayo, teri sauce.",
       price: 13.95,
-      image: "",
+      image: "Salmo_Mountail_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -755,7 +793,7 @@ export async function seed(knex) {
       name: "Spicy Salmon Roll",
       description: "",
       price: 6.5,
-      image: "",
+      image: "Spicy_Salmon_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -771,7 +809,7 @@ export async function seed(knex) {
       name: "California Roll",
       description: "Cucumber, avocado, crabmeat, mayo.",
       price: 6.0,
-      image: "",
+      image: "California_Roll_myxzxd.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -779,7 +817,7 @@ export async function seed(knex) {
       name: "Dynamite Roll",
       description: "Lettuce, cucumber, avocado, masago, prawn tempura, thousand island sauce.",
       price: 7.75,
-      image: "",
+      image: "Dynamite_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -787,7 +825,7 @@ export async function seed(knex) {
       name: "Crunch California Roll",
       description: "Deep-fried California roll with teriyaki sauce.",
       price: 8.0,
-      image: "",
+      image: "Crunch_California_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -795,7 +833,7 @@ export async function seed(knex) {
       name: "Crunch Calamari Roll",
       description: "Fried squids, chopped celery, onions, mayo, radish sprouts, topped with special mayo, teri sauce, fish roe, potato flake.",
       price: 14.5,
-      image: "",
+      image: "Crunch_Calamari_Roll",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -803,7 +841,7 @@ export async function seed(knex) {
       name: "Salmon King",
       description: "Avocado, cucumber, chopped salmon with special mayo and torched salmon, fish roe, furikake, garlic mayo and special mayo.",
       price: 13.95,
-      image: "",
+      image: "Salmon_King_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -811,7 +849,7 @@ export async function seed(knex) {
       name: "Crunch House Roll",
       description: "Wrapped seaweed and deep-fried with tuna, salmon, avocado, crabmeat, teriyaki sauce.",
       price: 10.5,
-      image: "",
+      image: "Crunch_House_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -819,7 +857,7 @@ export async function seed(knex) {
       name: "Dragon Roll",
       description: "Cucumber, tamago, crab meat, topped with unagi, avocado, cooked shrimp, fish roe, teri sauce, mayo, green onions.",
       price: 14.95,
-      image: "",
+      image: "Green_Dragon_Roll_fhxvtc.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -827,7 +865,7 @@ export async function seed(knex) {
       name: "Caterpillar Roll",
       description: "Prawn tempura, cucumber, mayo, topped with sliced avocado, fish roe, teri sauce.",
       price: 14.95,
-      image: "",
+      image: "Caterpillar_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -835,7 +873,7 @@ export async function seed(knex) {
       name: "Chicken Teriyaki Roll",
       description: "Chicken teriyaki, lettuce, cucumber, teriyaki sauce.",
       price: 7.5,
-      image: "",
+      image: "Chicken_Teriyaki_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -843,7 +881,7 @@ export async function seed(knex) {
       name: "Smoked Salmon Cream Cheese Roll",
       description: "Cream cheese, red pepper, mango, crab meat, mayo, smoked salmon on top.",
       price: 8.95,
-      image: "",
+      image: "Smoked_Salmon_Cream_Cheese_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -851,7 +889,7 @@ export async function seed(knex) {
       name: "Smoked Salmon Cream Cheese Roll (2)",
       description: "Inari, tamago, bean tempura, cream cheese, cucumber. Smoked salmon on top.",
       price: 8.95,
-      image: "",
+      image: "Smoked_Salmon_Cream_Cheese_Roll2.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -859,7 +897,7 @@ export async function seed(knex) {
       name: "Las Vegas Roll",
       description: "Yam, avo, cucumber, crabmeat, sp mayo, fish roe, teri sauce.",
       price: 7.5,
-      image: "",
+      image: "Las_Vegas_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -867,7 +905,7 @@ export async function seed(knex) {
       name: "Sweet Mango Paradise",
       description: "Avocado, cucumber, crab meat, red pepper, mayo, topped with mango, ebi, fish roe, sweet mango sauce.",
       price: 13.25,
-      image: "",
+      image: "Sweet_Mango_Paradise_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -875,7 +913,7 @@ export async function seed(knex) {
       name: "Double Spicy Salmon Roll",
       description: "Spicy Salmon, Cucumber, Topped with mashed spicy salmon and crispy flakes.",
       price: 8.5,
-      image: "",
+      image: "Double_Spicy_Salmon_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -883,7 +921,7 @@ export async function seed(knex) {
       name: "House Roll",
       description: "Avocado, cucumber, crabmeat, tuna, salmon, tamago, lettuce, mayo, fish roe.",
       price: 9.0,
-      image: "",
+      image: "House_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -891,7 +929,7 @@ export async function seed(knex) {
       name: "Avocado Roll",
       description: "Vegetarian. Avocado, cucumber with mayo.",
       price: 6.0,
-      image: "",
+      image: "Avocado_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -899,7 +937,7 @@ export async function seed(knex) {
       name: "Salmon Avocado Roll",
       description: "Cucumber, salmon, avocado.",
       price: 6.95,
-      image: "",
+      image: "Salmon_Avocado_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -907,7 +945,7 @@ export async function seed(knex) {
       name: "Yam Tempura Roll",
       description: "Vegetarian. Deep-fried yam, avocado, cucumber, lettuce, mayo.",
       price: 6.5,
-      image: "",
+      image: "Yam_Tempura_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -915,7 +953,7 @@ export async function seed(knex) {
       name: "Chicken Katsu Roll",
       description: "Chicken cutlet, cabbage, carrot, oshinko, house sauce, sea weed out side.",
       price: 12.0,
-      image: "",
+      image: "Chicken_Katsu_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -923,7 +961,7 @@ export async function seed(knex) {
       name: "Spicy Bomb Roll",
       description: "Cream cheese, asparagus, deep-fried tuna, green onion, teri and special sauce on top.",
       price: 11.75,
-      image: "",
+      image: "Spicy_Bomb_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -931,7 +969,7 @@ export async function seed(knex) {
       name: "Crispy Avo Roll",
       description: "Avocado, spicy mayo, teriyaki sauce, crispy flakes on top.",
       price: 7.5,
-      image: "",
+      image: "Crispy_Avo_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -939,7 +977,7 @@ export async function seed(knex) {
       name: "Chopped Scallop Roll",
       description: "Chopped scallop with fish roe and mayo.",
       price: 6.75,
-      image: "",
+      image: "Chopped_Scallop_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -947,7 +985,7 @@ export async function seed(knex) {
       name: "Red Fox Roll",
       description: "2pcs prawn tempura, cucumber, avocado, crabmeat, mayo, mashed Spicy tuna & crispy flake, teri sauce",
       price: 13.5,
-      image: "",
+      image: "Red_Fox_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -955,7 +993,7 @@ export async function seed(knex) {
       name: "Beef Teriyaki Roll",
       description: "Beef, lettuce, cucumber, avocado, mayo, teri sauce.",
       price: 7.5,
-      image: "",
+      image: "Beef_Teriyaki_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -971,7 +1009,7 @@ export async function seed(knex) {
       name: "BC Roll",
       description: "Grilled salmon skin, crab meat, cucumber, mayo, lettuce, fish roe, unagi sauce on top.",
       price: 6.0,
-      image: "",
+      image: "BC_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -979,7 +1017,7 @@ export async function seed(knex) {
       name: "Rainbow Roll",
       description: "Tamago, cucumber, mayo, topped with tuna, salmon, tako, hokki, cooked shrimp.",
       price: 12.5,
-      image: "",
+      image: "Rainbow_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -987,7 +1025,7 @@ export async function seed(knex) {
       name: "Smoked Salmon Garlic",
       description: "Fish roe, cucumber, avocado, prawn tempura, special mayo. Topped with smoked salmon, crispy garlic.",
       price: 8.95,
-      image: "",
+      image: "Smoked_Salmon_Garlic.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -995,7 +1033,7 @@ export async function seed(knex) {
       name: "Ultimate Dynamite Roll",
       description: "Lettuce, cucumber, avocado, fish roe, prawn tempura, spicy tuna, thousand island",
       price: 14.95,
-      image: "",
+      image: "Ultimate_Dynamite_roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1011,7 +1049,7 @@ export async function seed(knex) {
       name: "Salmon Roll",
       description: "",
       price: 3.45,
-      image: "",
+      image: "Salmon_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1027,7 +1065,7 @@ export async function seed(knex) {
       name: "Kappa Roll",
       description: "Cucumber.",
       price: 3.45,
-      image: "",
+      image: "Kappa_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1035,7 +1073,7 @@ export async function seed(knex) {
       name: "Unagi Roll",
       description: "Grilled eel and cucumber.",
       price: 8.75,
-      image: "",
+      image: "Unagi_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1043,7 +1081,7 @@ export async function seed(knex) {
       name: "Smoked Salmon Roll",
       description: "Avocado, lettuce, cucumber, fish roe, mayo, crabmeat, topped with smoked salmon.",
       price: 7.5,
-      image: "",
+      image: "Smoked_Salmon_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1051,7 +1089,7 @@ export async function seed(knex) {
       name: "Vegetable Roll",
       description: "Vegetarian. Avocado with mayo, red pepper, Japanese pickle, carrot, lettuce, cucumber, cabbage, Kanpyo",
       price: 6.5,
-      image: "",
+      image: "Vegetable_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1059,7 +1097,7 @@ export async function seed(knex) {
       name: "Vege Vege Roll",
       description: "Vegetarian. Mayo, cucumber, deep-fried zucchini, yam, carrot, onion, lettuce.",
       price: 6.75,
-      image: "",
+      image: "Vege_Vege_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1067,7 +1105,7 @@ export async function seed(knex) {
       name: "Bill's Roll",
       description: "Smoked salmon, cucumber, lettuce, mayo, deep-fried yam.",
       price: 7.5,
-      image: "",
+      image: "Bills_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1083,7 +1121,7 @@ export async function seed(knex) {
       name: "Tamago Roll",
       description: "Tamago, mayo.",
       price: 3.45,
-      image: "",
+      image: "Tamago_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1091,7 +1129,7 @@ export async function seed(knex) {
       name: "Don Katsu Roll",
       description: "Deep fried pork, cabbage, carrot, oshinko, house sauce",
       price: 12.0,
-      image: "",
+      image: "Don_Katsu_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1099,7 +1137,7 @@ export async function seed(knex) {
       name: "Mango Lassi Roll",
       description: "Cucumber, Masago, Prawn Tempura, Smoked Salmon, Mango, Mango sauce, Wasabi sauce",
       price: 12.5,
-      image: "",
+      image: "Mango_Lassi_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1123,7 +1161,7 @@ export async function seed(knex) {
       name: "Spider Futomaki",
       description: "5oz Soft shell crab, lettuce, cucumber, avocado, Fish Roe, Mayo, Sesame oil.",
       price: 18.95,
-      image: "",
+      image: "Spider_Futomaki.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1147,7 +1185,7 @@ export async function seed(knex) {
       name: "Box Sushi",
       description: "Smoked salmon, cooked shrimp, scallop, avocado, and sliced lemon.",
       price: 12.5,
-      image: "",
+      image: "Box_Sushi_sx4u87.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1155,7 +1193,7 @@ export async function seed(knex) {
       name: "Russian Roulette",
       description: "Avocado, fish roe, cucumber, banana pepper, prawn tempura, topped with mashed salmon, pickled jalapeño, teri sauce.",
       price: 13.5,
-      image: "",
+      image: "Russian_Roulette_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1171,7 +1209,7 @@ export async function seed(knex) {
       name: "Unagi Ten Roll",
       description: "Asparagus, cucumber, mayo, fish roe, grilled salmon skin topped with deep-fried unagi, green onion, teriyaki sauce, sesame seed.",
       price: 14.5,
-      image: "",
+      image: "Unagi_Ten_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1187,7 +1225,7 @@ export async function seed(knex) {
       name: "Tuna Battera",
       description: "Topped with torched chopped spicy tuna, pickled jalapeño, garlic mayo.",
       price: 12.95,
-      image: "",
+      image: "Tuna_Battera.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1195,7 +1233,7 @@ export async function seed(knex) {
       name: "Negihama Roll",
       description: "Chopped hamachi, green onion",
       price: 4.75,
-      image: "",
+      image: "Negi_Hama_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1211,7 +1249,7 @@ export async function seed(knex) {
       name: "Spicy Tuna Roll",
       description: "Spicy tuna, cucumber.",
       price: 6.5,
-      image: "",
+      image: "Spicy_Tuna_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1219,7 +1257,7 @@ export async function seed(knex) {
       name: "Double Spicy Tuna Roll",
       description: "Spicy tuna, cucumber, topped with mashed spicy tuna and crispy flakes.",
       price: 8.5,
-      image: "",
+      image: "Double_Spicy_Tuna_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1227,7 +1265,7 @@ export async function seed(knex) {
       name: "Tuna Roll",
       description: "",
       price: 3.45,
-      image: "",
+      image: "Tuna_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1243,7 +1281,7 @@ export async function seed(knex) {
       name: "Negitoro Roll",
       description: "Chopped toro, green onion.",
       price: 4.75,
-      image: "",
+      image: "Negi_Toro_Roll.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1275,7 +1313,7 @@ export async function seed(knex) {
       name: "Scallop Asparagus Tempura Roll",
       description: "Deep fried spicy scallop and tuna, asparagus wrapped in seaweed topped w/ teriyaki sauce, mayo, fish flakes",
       price: 12.5,
-      image: "",
+      image: "Scallop_Asparagus_Tempura_Roll_gnijsw.jpg",
       priority: 0,
       type: 'Maki & Roll'
     },
@@ -1295,7 +1333,7 @@ export async function seed(knex) {
       name: "Chopped Scallop Cone",
       description: "",
       price: 6.35,
-      image: "",
+      image: "Chopped_Scallop_Cone.jpg",
       priority: 0,
       type: 'Temaki'
     },
@@ -1303,7 +1341,7 @@ export async function seed(knex) {
       name: "Spicy Chopped Scallop Cone",
       description: "",
       price: 6.35,
-      image: "",
+      image: "Spicy_Chopped_Scallop_Cone.jpg",
       priority: 0,
       type: 'Temaki'
     },
@@ -1311,7 +1349,7 @@ export async function seed(knex) {
       name: "California Cone",
       description: "",
       price: 5.65,
-      image: "",
+      image: "California_Corn.jpg",
       priority: 0,
       type: 'Temaki'
     },
@@ -1319,7 +1357,7 @@ export async function seed(knex) {
       name: "Dynamite Cone",
       description: "",
       price: 6.95,
-      image: "",
+      image: "Dynamite_Cone.jpg",
       priority: 0,
       type: 'Temaki'
     },
@@ -1335,7 +1373,7 @@ export async function seed(knex) {
       name: "BC Cone",
       description: "",
       price: 5.65,
-      image: "",
+      image: "B.C_Cone.jpg",
       priority: 0,
       type: 'Temaki'
     },
@@ -1343,7 +1381,7 @@ export async function seed(knex) {
       name: "Ebi Cone",
       description: "",
       price: 6.0,
-      image: "",
+      image: "Ebi_Cone.jpg",
       priority: 0,
       type: 'Temaki'
     },
@@ -1351,7 +1389,7 @@ export async function seed(knex) {
       name: "Unagi Cone",
       description: "",
       price: 7.95,
-      image: "",
+      image: "Unagi_Cone.jpg",
       priority: 0,
       type: 'Temaki'
     },
@@ -1359,7 +1397,7 @@ export async function seed(knex) {
       name: "Spicy Salmon Cone",
       description: "",
       price: 6.0,
-      image: "",
+      image: "Spicy_Salmon_Cone.jpg",
       priority: 0,
       type: 'Temaki'
     },
@@ -1367,7 +1405,7 @@ export async function seed(knex) {
       name: "Spicy Tuna Cone",
       description: "",
       price: 6.0,
-      image: "",
+      image: "Spicy_Tuna_Cone.jpg",
       priority: 0,
       type: 'Temaki'
     },
@@ -1395,7 +1433,7 @@ export async function seed(knex) {
       name: "Grilled Salmon Teriyaki",
       description: "Lightly cooked vegetables with teri sauce on top.",
       price: 16.95,
-      image: "",
+      image: "Salmon_Teriyaki.jpg",
       priority: 0,
       type: 'A La Carte'
     },
@@ -1403,7 +1441,7 @@ export async function seed(knex) {
       name: "Beef Teriyaki",
       description: "Lightly cooked vegetables w/ teri sauce on top. Rice included.",
       price: 15.95,
-      image: "",
+      image: "Beef_Teriyaki.jpg",
       priority: 0,
       type: 'A La Carte'
     },
@@ -1411,7 +1449,7 @@ export async function seed(knex) {
       name: "Chicken Teriyaki",
       description: "Lightly cooked vegetables w/ teri sauce on top. Rice included.",
       price: 15.95,
-      image: "",
+      image: "Chicken_Teriyaki.jpg",
       priority: 0,
       type: 'A La Carte'
     },
@@ -1419,7 +1457,7 @@ export async function seed(knex) {
       name: "Tofu Teriyaki",
       description: "",
       price: 13.95,
-      image: "",
+      image: "Tofu_Teriyaki.jpg",
       priority: 0,
       type: 'A La Carte'
     },
@@ -1435,7 +1473,7 @@ export async function seed(knex) {
       name: "Chicken Katsu",
       description: "Deep-Fried Chicken House Sauce On Top",
       price: 16.95,
-      image: "",
+      image: "Chicken_Katsu_udlxx5.jpg",
       priority: 0,
       type: 'A La Carte'
     },
@@ -1443,7 +1481,7 @@ export async function seed(knex) {
       name: "Tuna Tataki",
       description: "",
       price: 15.95,
-      image: "",
+      image: "Tuna_Tataki.jpg",
       priority: 0,
       type: 'A La Carte'
     }
@@ -1455,7 +1493,7 @@ export async function seed(knex) {
       name: "Deluxe Assorted Sashimi",
       description: "Chef's Choice Daily fresh Sashimi.",
       price: 47.95,
-      image: "",
+      image: "Deluxe_Assoretd_Sashimi.jpg",
       priority: 0,
       type: 'Sashimi'
     },
@@ -1463,7 +1501,7 @@ export async function seed(knex) {
       name: "Tuna & Salmon Sashimi - Full",
       description: "Albacore And Atlantic.",
       price: 20.5,
-      image: "",
+      image: "Tuna_N_Salmon_Sashimi.jpg",
       priority: 0,
       type: 'Sashimi'
     },
@@ -1471,7 +1509,7 @@ export async function seed(knex) {
       name: "Spicy Salmon Sashimi - Full",
       description: "",
       price: 21.95,
-      image: "",
+      image: "Soy_Salmon_Sashimi.jpg",
       priority: 0,
       type: 'Sashimi'
     },
@@ -1479,7 +1517,7 @@ export async function seed(knex) {
       name: "Spicy Tuna Sashimi - Full",
       description: "Albacore.",
       price: 21.95,
-      image: "",
+      image: "Spicy_Tuns_Sashimi.jpg",
       priority: 0,
       type: 'Sashimi'
     },
@@ -1495,7 +1533,7 @@ export async function seed(knex) {
       name: "Hokkigai Sashimi - Full",
       description: "Arctic surf clam.",
       price: 20.5,
-      image: "",
+      image: "Hokkigai_Sashimi.jpg",
       priority: 0,
       type: 'Sashimi'
     },
@@ -1503,7 +1541,7 @@ export async function seed(knex) {
       name: "Assorted Sashimi",
       description: "Tuna, salmon, red tuna, tako, hokki, amaebi.",
       price: 35.0,
-      image: "",
+      image: "Assorted_Sashimi.jpg",
       priority: 0,
       type: 'Sashimi'
     },
@@ -1511,7 +1549,7 @@ export async function seed(knex) {
       name: "Salmon Sashimi - Full",
       description: "Atlantic.",
       price: 20.5,
-      image: "",
+      image: "Salmon_Sashimi.jpg",
       priority: 0,
       type: 'Sashimi'
     },
@@ -1519,7 +1557,7 @@ export async function seed(knex) {
       name: "Tuna Sashimi - Full",
       description: "Albacore.",
       price: 20.5,
-      image: "",
+      image: "Tuna_Sashimi.jpg",
       priority: 0,
       type: 'Sashimi'
     },
@@ -1527,7 +1565,7 @@ export async function seed(knex) {
       name: "Tako Sashimi - Full",
       description: "Octopus.",
       price: 25.0,
-      image: "",
+      image: "Tako_Sashimi.jpg",
       priority: 0,
       type: 'Sashimi'
     },
@@ -1535,7 +1573,7 @@ export async function seed(knex) {
       name: "Amaebi Sashimi - Full",
       description: "Sweet shrimp.",
       price: 29.85,
-      image: "",
+      image: "Amaebi_Sashimi.jpg",
       priority: 0,
       type: 'Sashimi'
     },
@@ -1543,7 +1581,7 @@ export async function seed(knex) {
       name: "Hamachi Sashimi - Full",
       description: "Yellowtail.",
       price: 29.95,
-      image: "",
+      image: "Hamachi_Sashimi.jpg",
       priority: 0,
       type: 'Sashimi'
     },
@@ -1551,7 +1589,7 @@ export async function seed(knex) {
       name: "Toro Sashimi - Full",
       description: "",
       price: 0.0,
-      image: "",
+      image: "Toro_Sashimi.jpg",
       priority: 0,
       type: 'Sashimi'
     },
@@ -1595,7 +1633,7 @@ export async function seed(knex) {
       name: "Deluxe Assorted Sushi Combo",
       description: "One piece each of ebi, tuna, salmon, ika, amaebi, tako, hokkigai, masago, unagi, hamachi, chopped scallop, 1/2 tuna roll, and 1/2 salmon roll.",
       price: 34.25,
-      image: "",
+      image: "Deluxe_Assorted_Sushi_Combo.jpg",
       priority: 0,
       type: 'Combination'
     },
@@ -1603,7 +1641,7 @@ export async function seed(knex) {
       name: "BC Combo",
       description: "B.C. roll, Alaska roll, one piece tuna, one piece salmon.",
       price: 18.0,
-      image: "",
+      image: "B.C_Combo.jpg",
       priority: 0,
       type: 'Combination'
     },
@@ -1619,7 +1657,7 @@ export async function seed(knex) {
       name: "Dynamite Combo",
       description: "Dynamite roll, one piece ebi, one piece tuna, two pieces salmon.",
       price: 16.95,
-      image: "",
+      image: "Dynamite_Combo.jpg",
       priority: 0,
       type: 'Combination'
     },
@@ -1627,7 +1665,7 @@ export async function seed(knex) {
       name: "California Combo",
       description: "Cali roll, one piece ebi, one piece tuna, two pieces salmon.",
       price: 14.95,
-      image: "",
+      image: "California_Combo.jpg",
       priority: 0,
       type: 'Combination'
     },
@@ -1635,7 +1673,7 @@ export async function seed(knex) {
       name: "Assorted Sushi Combo",
       description: "One piece each of ebi, tuna, salmon, ika, amaebi, tako, hokkigai, masago, tuna, and salmon roll.",
       price: 23.95,
-      image: "",
+      image: "Assorted_Sushi_Combo.jpg",
       priority: 0,
       type: 'Combination'
     },
@@ -1643,7 +1681,7 @@ export async function seed(knex) {
       name: "Roll Combo",
       description: "Cali roll, half each of tuna, salmon and kappa roll.",
       price: 10.95,
-      image: "",
+      image: "Roll_Combo.jpg",
       priority: 0,
       type: 'Combination'
     },
@@ -1651,7 +1689,7 @@ export async function seed(knex) {
       name: "Vegetable Combo",
       description: "Vegetable roll, kappa roll, oshinko roll.",
       price: 12.95,
-      image: "",
+      image: "Vegetable_Combo.jpg",
       priority: 0,
       type: 'Combination'
     },
@@ -1659,7 +1697,7 @@ export async function seed(knex) {
       name: "Dinner For 2",
       description: "House green salad, five pieces tempura, assorted sushi, one each of Cali or dyna roll, two bowls of miso.",
       price: 48.85,
-      image: "",
+      image: "Dinner_For_Two.jpg",
       priority: 0,
       type: 'Combination'
     },
@@ -1667,7 +1705,7 @@ export async function seed(knex) {
       name: "Spicy Salmon Combo",
       description: "",
       price: 20.5,
-      image: "",
+      image: "Spicy_Salmon_Combo.jpg",
       priority: 0,
       type: 'Combination'
     },
@@ -1675,7 +1713,7 @@ export async function seed(knex) {
       name: "Spicy Tuna Combo",
       description: "Spicy tuna roll, kappa roll, spicy tuna sashimi.",
       price: 20.5,
-      image: "",
+      image: "Spicy_Tuna_Combo.jpg",
       priority: 0,
       type: 'Combination'
     },
@@ -1683,7 +1721,7 @@ export async function seed(knex) {
       name: "Tuna & Salmon Combo",
       description: "Tuna two pieces, salmon two pieces, tuna roll, salmon roll.",
       price: 16.0,
-      image: "",
+      image: "Tuna_N_Salmon_Combo.jpg",
       priority: 0,
       type: 'Combination'
     },
@@ -1691,7 +1729,7 @@ export async function seed(knex) {
       name: "Sashimi & Sushi Combo",
       description: "Two pieces each of tuna and salmon sashimi, one piece ebi, one piece tuna, one piece salmon, one piece hokkigai, one piece chopped scallop.",
       price: 20.95,
-      image: "",
+      image: "Sashimi_and_Sushi_Combo.jpg",
       priority: 0,
       type: 'Combination'
     }
