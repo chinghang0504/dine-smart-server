@@ -10,7 +10,7 @@ const app = express();
 // Middlewares
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public/food_item_images'));
+app.use(express.static('public'));
 
 // Routers
 app.use('/menu', menuRouter);
