@@ -1,6 +1,6 @@
 import express from "express";
 import initKnex from "knex";
-import { development } from "../knexfile.js";
+import { development } from "../../knexfile.js";
 
 // Global constants
 const router = express.Router();

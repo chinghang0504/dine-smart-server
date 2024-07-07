@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
 import 'dotenv/config';
-import menuRouter from './routers/menu.js';
-import manageMenuRouter from './routers/manageMenu.js';
+import menuRouter from './routers/diner/menu.js';
+import managerMenuRouter from './routers/manager/menu.js';
 
 // Global constants
 const LISTENING_PORT = process.env.LISTENING_PORT || 8080;
@@ -15,7 +15,7 @@ app.use(express.static('public'));
 
 // Routers
 app.use('/menu', menuRouter);
-app.use('/manage/menu', manageMenuRouter);
+app.use('/manager/menu', managerMenuRouter);
 
 // Testing
 app.get("/", (req, res) => {

@@ -1,6 +1,6 @@
 import express from "express";
 import initKnex from "knex";
-import { development } from "../knexfile.js";
+import { development } from "../../knexfile.js";
 
 // Global constants
 const router = express.Router();
@@ -68,5 +68,13 @@ router.put("/foodtypes", async (req, res) => {
     return res.status(500).send();
   }
 });
+
+// Get all the food items
+
+// Create a new food item
+
+// Delete a food item
+
+// Modify a food item
 
 export default router;
