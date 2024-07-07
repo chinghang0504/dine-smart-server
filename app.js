@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Routers
-app.use("/menu", menuRouter);
+app.use("/diner/menu", menuRouter);
 app.use("/manager/menu", managerMenuRouter);
 
 // Testing
