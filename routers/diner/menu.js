@@ -6,7 +6,7 @@ import { development } from "../../knexfile.js";
 const router = express.Router();
 const knex = initKnex(development);
 
-// Get the menu of food types
+// Get all the food types (Diner)
 router.get("/foodtypes", async (_req, res) => {
   try {
     const foodTypes = await knex("food_types")
@@ -19,7 +19,7 @@ router.get("/foodtypes", async (_req, res) => {
   }
 });
 
-// Get the menu of food items
+// Get all the food items (Diner)
 router.get("/fooditems", async (req, res) => {
   const { foodtype } = req.body;
 

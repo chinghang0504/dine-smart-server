@@ -6,7 +6,7 @@ import { development } from "../../knexfile.js";
 const router = express.Router();
 const knex = initKnex(development);
 
-// Get all the food types
+// Get all the food types (Manager)
 router.get("/foodtypes", async (_req, res) => {
   try {
     const foodTypes = await knex("food_types")
@@ -18,7 +18,7 @@ router.get("/foodtypes", async (_req, res) => {
   }
 });
 
-// Create a new food type
+// Create a new food type (Manager)
 router.post("/foodtypes", async (req, res) => {
   const { type, image, priority } = req.body;
 
@@ -31,7 +31,7 @@ router.post("/foodtypes", async (req, res) => {
   }
 });
 
-// Delete a food type
+// Delete a food type (Manager)
 router.delete("/foodtypes", async (req, res) => {
   const { id } = req.body;
 
@@ -48,7 +48,7 @@ router.delete("/foodtypes", async (req, res) => {
   }
 });
 
-// Modify a food type
+// Modify a food type (Manager)
 router.put("/foodtypes", async (req, res) => {
   const { id, type, image, priority } = req.body;
 
@@ -69,12 +69,88 @@ router.put("/foodtypes", async (req, res) => {
   }
 });
 
-// Get all the food items
+// Get all the food items (Manager)
+router.get("/fooditems", async (req, res) => {
+  const { foodtype } = req.body;
 
-// Create a new food item
+  try {
+    let foodItems;
 
-// Delete a food item
+    if (foodtype) {
+      foodItems = await knex("food_items").where("type", foodtype);
+    } else {
+      foodItems = await knex("food_items");
+    }
 
-// Modify a food item
+    if (foodItems.length === 0) {
+      return res.status(400).send();
+    }
+
+    return res.json(foodItems);
+  } catch {
+    return res.status(500).send();
+  }
+});
+
+// Create a new food item (Manager)
+router.post("/fooditems", async (req, res) => {
+  const { name, description, price, image, priority, type } = req.body;
+
+  try {
+    await knex("food_items").insert({
+      name,
+      description,
+      price,
+      image,
+      priority,
+      type,
+    });
+
+    return res.status(201).send();
+  } catch {
+    return res.status(500).send();
+  }
+});
+
+// Delete a food item (Manager)
+router.delete("/fooditems", async (req, res) => {
+  const { id } = req.body;
+
+  try {
+    const rows = await knex("food_items").where("id", id).del();
+
+    if (rows === 0) {
+      return res.status(400).send();
+    }
+
+    return res.send();
+  } catch {
+    return res.status(500).send();
+  }
+});
+
+// Modify a food item (Manager)
+router.put("/fooditems", async (req, res) => {
+  const { id, name, description, price, image, priority, type } = req.body;
+
+  try {
+    const rows = await knex("food_items").where("id", id).update({
+      name,
+      description,
+      price,
+      image,
+      priority,
+      type,
+    });
+
+    if (rows === 0) {
+      return res.status(400).send();
+    }
+
+    return res.send();
+  } catch {
+    return res.status(500).send();
+  }
+});
 
 export default router;
