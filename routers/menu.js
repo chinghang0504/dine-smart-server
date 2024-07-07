@@ -10,6 +10,7 @@ const knex = initKnex(development);
 router.get('/foodtypes', async (req, res) => {
     const foodTypes = await knex('food_types')
         .select('type', 'image')
+        .orderByRaw('priority IS NULL')
         .orderBy('priority');
     return res.json(foodTypes);
 });
@@ -21,6 +22,7 @@ router.get('/fooditems', async (req, res) => {
     const foodItems = await knex('food_items')
         .select('id', 'name', 'description', 'price', 'image')
         .where('type', foodtype)
+        .orderByRaw('priority IS NULL')
         .orderBy('priority');
 
     if (foodItems.length === 0) {

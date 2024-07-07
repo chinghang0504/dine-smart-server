@@ -5,9 +5,10 @@
 export function up(knex) {
   // Create a food_types schema
   return knex.schema.createTable('food_types', (table) => {
-    table.string('type').primary();
+    table.uuid('id').primary().defaultTo(knex.raw('(UUID())'));
+    table.string('type').notNullable().unique();
     table.string('image').notNullable().defaultTo('');
-    table.integer('priority').notNullable().defaultTo(1000);
+    table.integer('priority');
   })
     .then(() => {
       // Create a food_items schema
@@ -17,7 +18,7 @@ export function up(knex) {
         table.text('description').notNullable().defaultTo('');
         table.decimal('price', 10, 2).notNullable().defaultTo(0.0);
         table.string('image').notNullable().defaultTo('');
-        table.integer('priority').notNullable().defaultTo(1000);
+        table.integer('priority');
         table.string('type')
           .notNullable()
           .references('type')
