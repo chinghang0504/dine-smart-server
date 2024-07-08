@@ -20,7 +20,10 @@ router.get("/foodtypes", async (_req, res) => {
 
 // Create a new food type (Manager)
 router.post("/foodtypes", async (req, res) => {
-  const { type, image, priority } = req.body;
+  let { type, image, priority } = req.body;
+  if (!priority) {
+    priority = null;
+  }
 
   try {
     await knex("food_types").insert({ type, image, priority });
@@ -77,9 +80,15 @@ router.get("/fooditems", async (req, res) => {
     let foodItems;
 
     if (foodtype) {
-      foodItems = await knex("food_items").where("type", foodtype);
+      foodItems = await knex("food_items")
+        .where("type", foodtype)
+        .orderByRaw("priority IS NULL")
+        .orderBy("priority");
     } else {
-      foodItems = await knex("food_items");
+      foodItems = await knex("food_items")
+        .orderBy("type")
+        .orderByRaw("priority IS NULL")
+        .orderBy("priority");
     }
 
     if (foodItems.length === 0) {
@@ -94,7 +103,10 @@ router.get("/fooditems", async (req, res) => {
 
 // Create a new food item (Manager)
 router.post("/fooditems", async (req, res) => {
-  const { name, description, price, image, priority, type } = req.body;
+  let { name, description, price, image, priority, type } = req.body;
+  if (!priority) {
+    priority = null;
+  }
 
   try {
     await knex("food_items").insert({
