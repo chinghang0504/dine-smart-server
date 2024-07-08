@@ -37,6 +37,30 @@ To install all the required packages, run the following command:
 npm install
 ```
 
+### Create Table Schemes
+
+To create the database tables, run:
+
+```bash
+npm run migrate
+```
+
+### Seed the Database
+
+To seed the database with initial data, run:
+
+```bash
+npm run seed
+```
+
+### Note: Delete Table Schemes
+
+To delete the database tables, run:
+
+```bash
+npm run rollback
+```
+
 ### Run the Program
 
 To start the application, run:
