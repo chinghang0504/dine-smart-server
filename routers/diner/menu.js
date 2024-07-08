@@ -21,7 +21,7 @@ router.get("/foodtypes", async (_req, res) => {
 
 // Get all the food items (Diner)
 router.get("/fooditems", async (req, res) => {
-  const { foodtype } = req.body;
+  const { foodtype } = req.query;
 
   try {
     const foodItems = await knex("food_items")
