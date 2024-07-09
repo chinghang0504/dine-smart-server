@@ -165,4 +165,40 @@ router.put("/fooditems", async (req, res) => {
   }
 });
 
+// Get the food type (Manager)
+router.get("/foodtype", async (req, res) => {
+  const { id } = req.query;
+
+  try {
+    const foodType = await knex("food_types")
+      .where('id', id)
+      .first()
+    if (!foodType) {
+      return res.status(400).send();
+    }
+
+    return res.json(foodType);
+  } catch {
+    return res.status(500).send();
+  }
+});
+
+// Get the food item (Manager)
+router.get("/fooditem", async (req, res) => {
+  const { id } = req.query;
+
+  try {
+    const foodItem = await knex("food_items")
+      .where('id', id)
+      .first()
+    if (!foodItem) {
+      return res.status(400).send();
+    }
+
+    return res.json(foodItem);
+  } catch {
+    return res.status(500).send();
+  }
+});
+
 export default router;
