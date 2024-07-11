@@ -1,16 +1,16 @@
 import express from "express";
-import initKnex from "knex";
-import { development } from "../../knexfile.js";
+import io from '../../app.js';
 
 // Global constants
 const router = express.Router();
-const knex = initKnex(development);
 
 // Receive a food order (Diner)
 router.post("", async (req, res) => {
-  const { cart } = req.body;
+  const { tableId, cart } = req.body;
 
-  if (cart) {
+  if (tableId && cart) {
+    // Send a message though socket.io
+    io.emit("FromAPI", req.body);
     return res.status(201).send();
   }
 
