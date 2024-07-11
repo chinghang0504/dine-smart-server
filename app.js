@@ -3,6 +3,7 @@ import cors from "cors";
 import "dotenv/config";
 import menuRouter from "./routers/diner/menu.js";
 import managerMenuRouter from "./routers/manager/menu.js";
+import orderRouter from "./routers/diner/order.js";
 
 // Global constants
 const LISTENING_PORT = process.env.LISTENING_PORT || 8080;
@@ -15,6 +16,7 @@ app.use(express.static("public"));
 
 // Routers
 app.use("/diner/menu", menuRouter);
+app.use("/diner/order", orderRouter);
 app.use("/manager/menu", managerMenuRouter);
 
 // Testing
